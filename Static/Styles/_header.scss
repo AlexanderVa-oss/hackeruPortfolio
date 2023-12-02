@@ -1,0 +1,62 @@
+.text-container>h1 {
+    font: normal normal 700 50px/90px Heebo;
+    text-align: center;
+}
+
+.text-container>p {
+    font: normal normal 500 20px/30px Heebo;
+    text-align: center;
+}
+
+.header-container {
+    background-image:
+        linear-gradient(to bottom, rgba(245, 20, 178, 0.171), rgba(255, 255, 255, 0.5)), url('Static/Images/bg.jpg');
+    height: 28.8125em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.technologies {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.technologies img {
+    width: 50px;
+}
+
+@media (max-width: 780px) {
+    .text-container>h1 {
+        font: normal normal 900 20px/50px Heebo;
+    }
+
+    .text-container>p {
+        font: normal bold 500 16px/30px Heebo;
+    }
+}
+
+@media (max-width: 520px) {
+    .text-container>h1 {
+        font: normal bold 900 30px/50px Heebo;
+    }
+
+    .text-container>p {
+        font: normal normal 500 16px/30px Heebo;
+        margin-top: 30px;
+    }
+
+    .text-container {
+        width: 80%;
+    }
+}

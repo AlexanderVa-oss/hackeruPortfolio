@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@900;500" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+
+        .text-container>h1 {
+            font: normal normal 900 80px/118px Heebo;
+        }
+
+        .text-container>p {
+            font: normal normal 500 20px/30px Heebo;
+        }
+
+        .header-container {
+            background-image:
+                linear-gradient(to bottom, rgba(245, 20, 178, 0.171), rgba(255, 255, 255, 0.5)), url('#');
+            height: 28.8125em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 55%;
+        }
+
+        .technologies {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        @media (max-width: 550px) {
+            .text-container>h1 {
+                font: normal normal 900 50px/118px Heebo;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-container">
+            <div class="text-container">
+                <h1>תיק עבודות</h1>
+                <p>
+                    לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה, בתחום הדפוס,
+                    ההדפסה
+                    והפרסום. למשל:
+                    לורםלורם איפסום או בקיצור לי.
+                </p>
+            </div>
+        </div>
+        <div class="technologies">
+            <img src="Static/Icons//img-HTML.png" alt="HTML Icon">
+            <img src="Static/Icons//img-CSS.png" alt="CSS Icon">
+            <img src="Static/Icons//img-ES6.png" alt="ES6 Icon">
+            <img src="Static/Icons//img-Bootstrap.png" alt="Bootstrap Icon">
+            <img src="Static/Icons//img-SASS.png" alt="SASS Icon">
+        </div>
+    </div>
+</body>
+
+</html>

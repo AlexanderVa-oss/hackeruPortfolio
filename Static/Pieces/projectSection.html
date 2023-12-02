@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Section</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90vw;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .projectSection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .projectSection h3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2em;
+            margin: 10px;
+        }
+
+        .projectSection p {
+            max-width: 400px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.4em;
+            margin: 10px;
+        }
+
+        .cardBox {
+            max-width: 1000px;
+            justify-items: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px;
+            background-color: gray;
+        }
+
+        .cardBox .card {
+            width: 250px;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgb(67, 63, 70), 0 0 5px rgb(0, 0, 0);
+            background-color: pink;
+        }
+
+        @media screen and (max-width:920px) {
+            .cardBox {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .cardBox {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="projectSection">
+            <div class="textBox">
+                <h3>My Projects</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis temporibus sapiente deleniti qui,
+                    voluptatibus tempora.</p>
+            </div>
+            <div class="cardBox">
+                <div class="card" name="landingPage1"></div>
+                <div class="card" name="landingPage2"></div>
+                <div class="card" name="landingPage3"></div>
+                <div class="card" name="landingPage4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

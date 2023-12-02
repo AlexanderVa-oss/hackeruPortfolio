@@ -1,0 +1,21 @@
+:root {
+    --white: #f9f9f9;
+    --black: #36383F;
+    --gray: #85888C;
+    --aqua: #1AE0EC;
+    --aquaBGCcemterSection: #d0f9fb;
+}
+
+.primeryButtons {
+    width: 150px;
+    height: 30px;
+    background-color: var(--aqua);
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 30px;
+    font-size: 1.4em;
+}
+
+.primeryButtons:hover {
+    background-color: var(--gray);
+}
+

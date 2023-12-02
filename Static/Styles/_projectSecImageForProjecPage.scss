@@ -1,0 +1,13 @@
+.projectImage {
+    background-color: var(--aquaBGCcemterSection);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.projectImage img {
+width: 50vw;
+margin-top: 60px;
+margin-bottom: 60px;
+border: 1px solid var(--gray);
+box-shadow: 0px 0px 15px rgb(67, 63, 70), 0 0 5px rgb(0, 0, 0);
+}

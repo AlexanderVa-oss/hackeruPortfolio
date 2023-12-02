@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --main: #FDBD03;
+            --input: #E5EEFF;
+            --text: #020253;
+            --label: #2C2C2C;
+            --btn: black;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+        }
+
+        /* line plus whatssapp icon */
+        .stlyledLine {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .coloredline {
+            width: 435px;
+            background-color: var(--main);
+            height: 18px;
+        }
+
+        .whatsAppbg {
+            background-color: var(--main);
+            width: 95px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            aspect-ratio: 1/1;
+            margin-left: 60px;
+            margin-top: 30px;
+        }
+
+        .whatsAppbg img {
+            width: 53px;
+        }
+
+        /* center card plus img */
+        .center {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .center img {
+            width: 40vw;
+        }
+
+        .center .card {
+            width: 60vw;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+        }
+
+        .center .card h1 {
+            color: var(--main);
+            font: normal normal 900 66px/97px Heebo;
+            font-size: 66px;
+            margin-top: 5vw;
+            text-align: right;
+        }
+
+        .center .card p {
+            color: var(--text);
+            font: normal normal normal 20px/29px Heebo;
+            text-align: right;
+            max-width: 385px;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+
+        /* form style */
+        .center form .userContact {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .center form .name,
+        .email,
+        .about {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .center form label {
+            font: normal normal bold 16px/24px Heebo;
+            height: 24px;
+            color: var(--text);
+        }
+
+        .center form input {
+            background-color: var(--input);
+            height: 50px;
+            width: 25vw;
+        }
+
+        .center form textarea {
+            background-color: var(--input);
+            resize: none;
+            height: 142px;
+        }
+
+        .center form input,
+        textarea {
+            border: none;
+            border-bottom: 5px solid var(--main);
+        }
+
+        .center .card form .btn {
+            text-align: right;
+            margin-top: 5vw;
+        }
+
+        .center .card form .btn input {
+            background-color: var(--main);
+            color: var(--btn);
+            text-align: center;
+            font: normal normal bold 22px/30px Heebo;
+            width: 166px;
+            height: 50px;
+        }
+
+        .icons {
+            display: flex;
+            margin-left: 15px;
+        }
+
+        .icons div {
+            background-color: var(--main);
+            border-radius: 50%;
+            width: 95px;
+            height: 95px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2vw;
+        }
+
+        .icons div img {
+            width: 53px;
+            aspect-ratio: 1/1;
+        }
+
+        .colored {
+            background-color: var(--main);
+            height: 18px;
+            width: 50vw;
+        }
+
+        @media screen and (max-width: 880px) {
+            .center {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+
+            .center form input {
+                width: 90vw;
+            }
+
+            .center .card {
+                align-items: center;
+            }
+
+            .center .card h1 {
+                font: normal normal 900 32px/50px Heebo;
+                text-align: center;
+            }
+
+            .center .card p {
+                font: normal normal normal 16px/22px Heebo;
+                text-align: center;
+            }
+
+            .center .card form .btn {
+                align-self: flex-end;
+                width: 95%;
+            }
+
+            .center .card form .btn input {
+                width: 100%;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .center form .userContact {
+                flex-direction: column;
+            }
+
+            .center form input {
+                background-color: var(--input);
+                height: 50px;
+            }
+
+            .icons {
+                display: flex;
+                justify-content: center;
+                margin-left: 15px;
+            }
+
+            .icons div {
+                width: 50px;
+                height: 50px;
+            }
+
+            .icons div img {
+                width: 30px;
+                aspect-ratio: 1/1;
+            }
+            .colored {
+            width: 100vw;
+        }
+        }
+    </style>
+</head>
+<div class="container">
+    <div class="stlyledLine">
+        <div class="coloredline"></div>
+    </div>
+    <div class="whatsAppbg">
+        <img src="img/whatsApp.png" alt="whatsApp icon">
+    </div>
+    <div class="center">
+        <div class="card">
+            <h1>ייעוץ חינם</h1>
+            <p>לקבלת ייעוץ חינם, מוזמנים להשאיר פרטים ומומחה יחזור אליכם עם מענה.</p>
+            <form>
+                <div class="userContact">
+                    <div class="name">
+                        <label for="name">שם מלא</label>
+                        <input type="text">
+                    </div>
+                    <div class="email">
+                        <label for="mail">דוא״ל</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="about">
+                    <label for="aboutx">נושה פניה</label>
+                    <textarea name=""></textarea>
+                </div>
+                <div class="btn">
+                    <input type="button" value="שליחה">
+                </div>
+            </form>
+        </div>
+        <div class="phoneImg"><img src="img/phonepic.png" alt="Phone IMG"></div>
+    </div>
+    <div class="icons">
+        <div class="faceBoockbg"><img src="img/faceBoock.png" alt="Facebook"></div>
+        <div class="instagrambg"><img src="img/email.png" alt="instagram"></div>
+        <div class="linkIdbg"><img src="img/linkId.png" alt="linkId"></div>
+        <div class="phonebg"><img src="img/phone.png" alt="Phone"></div>
+    </div>
+    <div class="colored"></div>
+</div>
+</div>
+
+<body>
+
+</body>
+
+</html>

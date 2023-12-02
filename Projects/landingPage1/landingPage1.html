@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page 1</title>
+    <link rel="Icon" href="pic/{A.K.}.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --headTextColor: #FFFFFF;
+            --bgcb: #1A1A1AD4;
+            --pTextColor: #F9F9F9;
+            --btnPink: #D31C75;
+            --btnBorderColor: #00000029;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+        }
+
+        img {
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100hm;
+        }
+
+        .bottom {
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 490px;
+        }
+
+        .card {
+            top: 20vh;
+            right: 20vw;
+            width: 35em;
+            height: 40em;
+            background-color: var(--bgcb);
+            position: absolute;
+            direction: rtl;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        input {
+            width: 26em;
+            height: 3em;
+            font-size: 1em;
+        }
+
+        label {
+            display: block;
+            color: var(--headTextColor);
+            margin-top: 10px;
+            font: normal normal 700 16px/24px Heebo;
+        }
+
+        input[type=submit] {
+            width: 166px;
+            height: 50px;
+            margin-top: 20px;
+            background-color: var(--btnPink);
+            color: var(--headTextColor);
+            font: normal normal 700 22px/30px Heebo;
+        }
+
+        h1 {
+            color: var(--headTextColor);
+            text-align: center;
+            font: normal normal 900 36px/53px Heebo;
+        }
+
+        p {
+            color: var(--pTextColor);
+            text-align: center;
+            font: normal normal 400 20px/29px Heebo;
+            margin: 20px 80px;
+        }
+
+        /* X-Small devices (portrait phones, less than 576px) */
+        @media (max-width: 575.98px) {
+            input {
+                width: 70vw;
+            }
+        }
+
+        /* Small devices (landscape phones, less than 768px)  */
+        @media (max-width: 767.98px) {
+            .container {
+                max-width: 991.98px;
+            }
+
+            .card {
+                width: 90vw;
+                height: 40.1875em;
+            }
+        }
+
+        /* Medium devices (tablets, less than 992px)  */
+        @media (max-width: 991.98px) {
+            .container {
+                max-width: 991.98px;
+            }
+
+            .card {
+                flex: none;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            p {
+                font: normal normal 200 16px/20px Heebo;
+            }
+        }
+    </style>
+</head>
+<div class="container">
+    <img src="pic/Path 15@2x.png" alt="">
+    <div class="card">
+        <h1>
+            תן לנו להוביל אותך קדימה
+        </h1>
+        <p>
+            לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.
+        </p>
+        <form action="">
+            <label for="FirstName">שם</label>
+            <input type="text" id="FirstName" required><br>
+            <label for="LastName">דואר אלקרוני</label>
+            <input type="text" id="LastName" required><br>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+    <div class="bottom"></div>
+</div>
+
+<body>
+
+</body>
+
+</html>

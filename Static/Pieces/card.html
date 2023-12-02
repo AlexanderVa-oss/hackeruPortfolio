@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90vw;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card img {
+            width: 250px;
+            height: 150px;
+        }
+
+        .technologies {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .card button {
+            width: 150px;
+            height: 20px;
+            background-color: gray;
+            border-radius: 10px 10px 10px 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="" alt="">
+            <h3>Here & Now</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="cardIcons">
+                <img src="Static/Icons//img-HTML.png" alt="HTML Icon">
+                <img src="Static/Icons//img-CSS.png" alt="CSS Icon">
+                <img src="Static/Icons//img-ES6.png" alt="ES6 Icon">
+                <img src="Static/Icons//img-Bootstrap.png" alt="Bootstrap Icon">
+                <img src="Static/Icons//img-SASS.png" alt="SASS Icon">
+            </div>
+            <button class="toProjectPage">To project page</button>
+        </div>
+    </div>
+</body>
+
+</html>

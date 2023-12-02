@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me section</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 90vw;
+            margin: 0 auto;
+        }
+
+        .contactMeSection {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            background-color: #36383F;
+        }
+
+        .contactMeSection .packet {
+            max-width: 770px;
+            max-height: 671px;
+            width: 40vw;
+            background-color: blueviolet;
+        }
+
+        .mainFormContactMe {
+            display: flex;
+            flex-direction: column;
+            width: 30vw;
+            margin: 5vw;
+        }
+
+        .mainFormContactMe h3 {
+            color: #f9f9f9;
+            margin: 10px;
+        }
+
+        .mainFormContactMe p {
+            color: #85888C;
+            margin: 10px 0 10px 0;
+        }
+
+        .mainFormContactMe label {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+            color: #85888C;
+        }
+
+        .mainFormContactMe input {
+            width: 100%;
+            min-width: 100px;
+            max-width: 600px;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            border-color: #1AE0EC;
+            height: 30px;
+        }
+
+        .mainFormContactMe .contentOfTheMessageBox input {
+            width: 100%;
+            height: 100px;
+        }
+
+        .mainFormContactMe .send {
+            width: 10vw;
+            max-width: 166px;
+            height: 50px;
+            margin: 20px;
+            background-color: #1AE0EC;
+            color: #36383F;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 22px;
+            border-radius: 25px;
+        }
+
+        .contactIconList {
+            grid-row: 2/3;
+            grid-column: 1/3;
+            height: 200px;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: #1AE0EC;
+        }
+
+        .contactIconList img {
+            width: 40px;
+            height: 40px;
+            background-color: gray;
+            color: aliceblue;
+        }
+
+        .develop {
+            display: grid;
+            grid-template-columns: 20% 60% 20%;
+            color: #1AE0EC;
+            background-color: #36383F;
+        }
+
+        @media screen and (max-width: 600px) {
+            .contactMeSection {
+                grid-template-columns: repeat(1, 1fr);
+                justify-items: center;
+            }
+            .contactMeSection img {
+                grid-column: 1/2;
+                width: 100%;
+            }
+
+            .contactMeSection .mainFormContactMe {
+                grid-column: 1/2;
+                grid-row: 2;
+                max-width: 300px;
+                width: 80vw;
+            }
+            .contactMeSection .contactIconList {
+                grid-row: 3;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="contactMeSection">
+            <!-- image -->
+            <img src="Static/Images/packet.png" alt="Packet Image" class="packet">
+            <!-- Form -->
+            <div class="mainFormContactMe">
+                <h3>Contact me</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum ullam saepe reiciendis libero
+                    repellat
+                    at?</p>
+                <div class="formbuild">
+                    <div class="nameBox">
+                        <label for="">Full name</label>
+                        <input type="text">
+                    </div>
+                    <div class="emailBox">
+                        <label for="email">Mail</label>
+                        <input type="email">
+                    </div>
+                    <div class="phoneBox">
+                        <label for="phone">Phone number</label>
+                        <input type="number">
+                    </div>
+                    <div class="contentOfTheMessageBox">
+                        <label for="contentOfTheMessage">Content of the message</label>
+                        <input type="text">
+                    </div>
+                    <div class="sendBox">
+                        <input type="button" value="send" class="send">
+                    </div>
+                </div>
+            </div>
+            <!-- contact icon list -->
+            <div class="contactIconList">
+                <div class="locationIcon">
+                    <img src="" alt="locationIcon">
+                    <p>Holon</p>
+                </div>
+                <div class="mailIcon">
+                    <img src="" alt="mailIcon">
+                    <p>alexKukushkin@gmail.com</p>
+                </div>
+                <div class="whatsAppIcon">
+                    <img src="" alt="whatsAppIcon">
+                    <p>0542094669</p>
+                </div>
+                <div class="phoneIcon">
+                    <img src="" alt="phoneIcon">
+                    <p>0542094669</p>
+                </div>
+                <div class="linkIdIcon">
+                    <img src="" alt="linkIdIcon">
+                    <p>Sasha k.</p>
+                </div>
+                <div class="facebookIcon">
+                    <img src="" alt="facebookIcon">
+                    <p>Sasha Vambolt Kukushkin</p>
+                </div>
+            </div>
+        </div>
+        <!-- develop line -->
+        <div class="develop">
+            <p>Alexander Kukushkin</p>
+            <p></p>
+            <p>All rights reserved</p>
+        </div>
+    </div>
+</body>
+
+</html>
