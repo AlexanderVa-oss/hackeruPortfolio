@@ -16,7 +16,7 @@
 body {
     width: 100dvw;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     min-height: 100vh;
     background-image: url('../img/Leonardo_Diffusion_XL_background_wallpaper_for_my_pc_0.jpg');

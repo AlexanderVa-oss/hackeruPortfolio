@@ -1,0 +1,41 @@
+:root {
+    --white: #f9f9f9;
+    --black: #36383f00;
+    --gray: #85888C;
+    --aqua: #1AE0EC;
+    --aquaBGCcemterSection: #d0f9fb;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0px;
+}
+
+.myPhoto {
+    width: 20vw;
+    max-width: 60px;
+    aspect-ratio: 1/1;
+    border-radius: 50% 0 50% 0;
+}
+
+.myLogo {
+    width: 25dvw;
+    max-width: 300px;
+}
+
+.myGit {
+    width: 25dvw;
+}

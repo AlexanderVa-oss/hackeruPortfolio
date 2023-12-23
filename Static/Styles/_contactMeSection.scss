@@ -14,7 +14,7 @@
     max-width: 600px;
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    width: 60%;
     margin: 5vw;
     text-align: center;
 }
@@ -30,12 +30,12 @@
 }
 
 .formbuild {
-    width: 40vw;
+    width:100%;
     max-width: 600px;
 }
 
 .mainFormContactMe label {
-    width: 40vw;
+    width: 100%;
     max-width: 600px;
     display: flex;
     justify-content: flex-end;
@@ -116,7 +116,7 @@
         grid-column: 1/2;
         grid-row: 2;
         max-width: 300px;
-        width: 80vw;
+        width: 90%;
     }
 
     .contactMeSection .contactIconList {

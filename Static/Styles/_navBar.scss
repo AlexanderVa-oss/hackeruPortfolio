@@ -1,20 +1,19 @@
 //  My Photo Style
 .myPhoto {
-    width: 60px;
+    width: 33dvw;
+    max-width: 60px;
     aspect-ratio: 1/1;
     border-radius: 50% 0 50% 0;
-    margin-left: 5vw;
 }
 
 //  My Logo Style
 .myLogo {
-    width: 30vw;
-    min-width: 100px;
-
+    width: 33dvw;
+    max-width: 300px;
 }
 
 .myGit {
-    width: 30vw;
+    width: 33dvw;
 }
 
 /* navbar style */
@@ -32,7 +31,7 @@ ul {
     height: 70px;
     background-color: var(--black);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     // position: sticky !important;
     top: 0px;

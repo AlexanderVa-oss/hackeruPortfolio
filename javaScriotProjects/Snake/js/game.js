@@ -7,15 +7,11 @@ ground.src = 'img/backGraundField.png';
 const foodImg = new Image();
 foodImg.src = 'img/diamond-color-icon.svg';
 
-// const snakeHead = new Image();
-// snakeHead.src = 'img/red-circle-icon.svg';
-
 const snakeHead = new Image();
-snakeHead.src = 'img/emoji-tongue-icon.svg';
+snakeHead.src = 'img/circle.png';
 
-
-// const snakeBody = new Image();
-// snakeBody.src = 'img/emoji-tongue-icon.svg';
+const snakeBody = new Image();
+snakeBody.src = 'img/record.png';
 
 let box = 32;
 
@@ -65,12 +61,8 @@ function drawGame() {
         if (i == 0) {
             ctx.drawImage(snakeHead, snake[i].x, snake[i].y, box, box)
         } else {
-            ctx.drawImage(snakeHead, snake[i].x, snake[i].y, box, box)
+            ctx.drawImage(snakeBody, snake[i].x, snake[i].y, box, box)
         }
-
-        // Also posible use style fithout image
-        // ctx.fillStyle = 'green'
-        // ctx.fillRect(snake[i].x, snake[i].y, box, box)
     }
 
     ctx.fillStyle = 'lightblue';
