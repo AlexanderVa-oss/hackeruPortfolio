@@ -25,8 +25,8 @@ class CardForJsProject {
 
 let c1 = new CardForJsProject('javaScriotProjects/xo/xo.html','', 'Tic-Tack-Toe', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, assumenda!');
 let c2 = new CardForJsProject('javaScriotProjects/memoryCard/memoryCard.html', '', 'Memory Game', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, assumenda!');
-let c3 = new CardForJsProject('javaScriotProjects/Snake/snake.html','', 'Snake', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, assumenda!');
-let c4 = new CardForJsProject('javaScriotProjects/flipyBird/flappyBird.html', '', 'Flappy Bird', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, assumenda!');
+let c4 = new CardForJsProject('javaScriotProjects/Snake/snake.html','', 'Snake', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, assumenda!');
+let c3 = new CardForJsProject('javaScriotProjects/flipyBird/flappyBird.html', '', 'Flappy Bird', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, assumenda!');
 let c5 = new CardForJsProject('javaScriotProjects/countriesFin/countriesFin.html', '', 'Countries', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, assumenda!');
 let c6 = new CardForJsProject('javaScriotProjects/myAcount/myAcount.html', '', 'My Acount', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, assumenda!');
 let c7 = new CardForJsProject('javaScriotProjects/ToDoList1/ToDoList1.html', '', 'To Do List', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, assumenda!'); 
