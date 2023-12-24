@@ -85,15 +85,15 @@ body {
     }
 }
 
-.front-view{
+.front-view {
     background-image: url('../img/Leonardo_Diffusion_XL_card_backgraund_0.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
 }
 
-.back-view{
-background: var(--bgcColorCard);
+.back-view {
+    background: var(--bgcColorCard);
 }
 
 .card .view {

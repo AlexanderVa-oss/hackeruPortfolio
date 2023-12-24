@@ -7,7 +7,7 @@
 }
 
 .container{
-    
+    user-select: none;
 }
 
 .header {
