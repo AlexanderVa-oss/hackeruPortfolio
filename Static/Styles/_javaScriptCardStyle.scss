@@ -4,8 +4,8 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    left: 0;
-    top: 0;
+    // left: 0;
+    // top: 0;
 }
 
 .cardJs {
@@ -14,8 +14,9 @@
     position: relative;
     perspective: 1000px;
     cursor: pointer;
-    // list-style: none;
-    // user-select: none;
+    list-style: none;
+    user-select: none;
+    margin: 20px;
 }
 
 .jsCardFront,
@@ -35,9 +36,9 @@
 
 }
 
-.jsCardFront {
-    background-image: url('https://cdn.leonardo.ai/users/174b9e54-f96e-4369-950f-7eaad8384fa9/generations/1834c86c-83c8-4d2a-99c7-427aabbcbab1/Leonardo_Diffusion_XL_green_snake_skin_0.jpg');
-}
+// .jsCardFront {
+//     background-image: url('https://cdn.leonardo.ai/users/174b9e54-f96e-4369-950f-7eaad8384fa9/generations/1834c86c-83c8-4d2a-99c7-427aabbcbab1/Leonardo_Diffusion_XL_green_snake_skin_0.jpg');
+// }
 
 .gameName {
     position: absolute;

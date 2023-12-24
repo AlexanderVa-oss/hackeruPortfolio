@@ -65,9 +65,9 @@
 
         }
 
-        .jsCardFront {
+        /* .jsCardFront {
             background-image: url('https://cdn.leonardo.ai/users/174b9e54-f96e-4369-950f-7eaad8384fa9/generations/1834c86c-83c8-4d2a-99c7-427aabbcbab1/Leonardo_Diffusion_XL_green_snake_skin_0.jpg');
-        }
+        } */
 
         .gameName {
             position: absolute;
@@ -121,19 +121,40 @@
 
 <body>
     <section>
-        <div class="jsCardWrap">
-            <div class="cardJs" onclick="location.href='https://www.facebook.com/kukushkinalex/';">
-                <div class="jsCardFront">
-                    <div class="gameName">Game Name</div>
-                    <div class="descriptionProject">Lorem ipsum dolor sit amet.</div>
-                </div>
-                <div class="jsCardBack">Click For play</div>
-            </div>
-        </div>
+        <div class="jsCardWrap"></div>
     </section>
 
 
-    <script></script>
+    <script>
+        class CardForJsProject {
+            gameImage;
+            gameName;
+            gameDescription;
+            gameClickToPlay;
+            constructor(gameImage, gameName, gameDescription, gameClickToPlay) {
+                this.gameImage = gameImage || 'url(https://cdn.leonardo.ai/users/174b9e54-f96e-4369-950f-7eaad8384fa9/generations/1834c86c-83c8-4d2a-99c7-427aabbcbab1/Leonardo_Diffusion_XL_green_snake_skin_0.jpg)';
+                this.gameName = gameName;
+                this.gameDescription = gameDescription;
+                this.gameClickToPlay = gameClickToPlay || `Click To Play`;
+            }
+            get fullCardForJsProject() {
+                return (
+                `<div class="cardJs" onclick="location.href='https://www.facebook.com/kukushkinalex/';">
+                <div class="jsCardFront" style="background-image: ${this.gameImage};">
+                    <div class="gameName">${this.gameName}</div>
+                    <div class="descriptionProject">${this.gameDescription}</div>
+                </div>
+                <div class="jsCardBack">${this.gameClickToPlay}</div>
+            </div>`)
+            }
+        }
+
+        let c1 = new CardForJsProject('','snake','Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, assumenda!')
+        let c2 = new CardForJsProject('', 'snake', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, assumenda!')
+
+        document.querySelector('.jsCardWrap').innerHTML += c1.fullCardForJsProject
+        document.querySelector('.jsCardWrap').innerHTML += c2.fullCardForJsProject
+    </script>
 </body>
 
 </html>
