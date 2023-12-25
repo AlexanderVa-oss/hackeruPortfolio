@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            user-select: none;
+        }
+
+        .calculator {
+            border: 1px solid #000;
+            padding: 10px;
+            background-color: gray;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        #display {
+            width: calc(100% - 20px);
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #427335;
+            border: none;
+            box-shadow: inset 0px 0px 8px rgb(0, 0, 0);
+            border-radius: 5px;
+            font-size: 20px;
+            text-align: right;
+            color: black;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .buttons button {
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            color: #fff;
+            background-color: black;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.1s, box-shadow 0.1s;
+            cursor: pointer;
+        }
+
+        .buttons button:active {
+            transform: translateY(4px);
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button onclick="appendNumber('+')">+</button>
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button onclick="appendNumber('-')">-</button>
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button onclick="appendNumber('*')">*</button>
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="appendNumber('/')">/</button>
+        </div>
+    </div>
+
+    <script>
+        function clearDisplay() {
+            document.getElementById('display').value = '';
+        }
+
+        function appendNumber(number) {
+            document.getElementById('display').value += number;
+        }
+
+        function calculate() {
+            const display = document.getElementById('display');
+            const expression = display.value;
+
+            try {
+                const result = computeExpression(expression);
+                display.value = result;
+            } catch (error) {
+                alert('Invalid expression');
+            }
+        }
+
+        function computeExpression(expression) {
+            const tokens = tokenize(expression);
+            return evaluateTokens(tokens);
+        }
+
+        function tokenize(expression) {
+            const regex = /(\d+\.?\d*)|([\+\-\*\/])/g;
+            return expression.match(regex);
+        }
+
+        function evaluateTokens(tokens) {
+            let total = parseFloat(tokens[0]);
+
+            for (let i = 1; i < tokens.length; i += 2) {
+                const operator = tokens[i];
+                const nextNumber = parseFloat(tokens[i + 1]);
+
+                switch (operator) {
+                    case '+': total += nextNumber; break;
+                    case '-': total -= nextNumber; break;
+                    case '*': total *= nextNumber; break;
+                    case '/': total /= nextNumber; break;
+                }
+            }
+
+            return total;
+        }
+
+    </script>
+</body>
+
+</html>
