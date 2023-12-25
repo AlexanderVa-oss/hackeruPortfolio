@@ -31,15 +31,3 @@
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgb(67, 63, 70), 0 0 5px rgb(0, 0, 0);
 }
-
-@media screen and (max-width:960px) {
-    .cardBox {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width:620px) {
-    .cardBox {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
